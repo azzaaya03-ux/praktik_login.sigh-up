@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum - Form Login & Registrasi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .form-wrapper {
+            background-color: #005a36;
+            padding: 40px 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-card {
+            background-color: #ffffff;
+            padding: 30px 25px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .form-card h2 {
+            color: #000000;
+            margin-bottom: 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #005a36;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: left;
+            margin-bottom: 20px;
+            padding-left: 5px;
+        }
+
+        .forgot-password a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .btn-submit:hover {
+            background-color: #1b5e20;
+        }
+
+        .form-footer {
+            font-size: 14px;
+            color: #333333;
+            margin-top: 10px;
+        }
+
+        .form-footer a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tugas Praktikum 1</h1>
+
+    <div class="container">
+      
+        <div class="form-wrapper">
+            <div class="form-card">
+                <h2>Form Login</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="email" placeholder="Masukkan email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Masukkan password" required>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Lupa Password ?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Login</button>
+                    
+                    <div class="form-footer">
+                        Belum punya akun? <a href="#">Daftar.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+            <div class="form-card">
+                <h2>Form Registrasi</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="email" placeholder="Masukkan email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Masukkan password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Masukkan ulang password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Daftar</button>
+                    
+                    <div class="form-footer">
+                        sudah punya akun? <a href="#">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
